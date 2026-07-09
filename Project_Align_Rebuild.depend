@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1783635432 source:/home/unk331/CodeProject/Project_Align_Rebuild/src/main.cpp
+	"runtimeManger.hpp"
+	"Bootstrap.hpp"
+	"DebugAndLogRuntime.hpp"
+	"SupervisorRuntime.hpp"
+	<iostream>
+
+1783635228 /home/unk331/CodeProject/Project_Align_Rebuild/include/runtime/runtimeManger.hpp
+	<string>
+	<stdint.h>
+	<unordered_map>
+	"ErrorHandler.hpp"
+
+1783635268 /home/unk331/CodeProject/Project_Align_Rebuild/include/runtime/ErrorHandler.hpp
+	<stdint.h>
+
+1783635306 /home/unk331/CodeProject/Project_Align_Rebuild/include/runtime/Bootstrap.hpp
+	"runtimeManger.hpp"
+	"DebugAndLogRuntime.hpp"
+	"SupervisorRuntime.hpp"
+	<memory>
+	<vector>
+
+1783635358 /home/unk331/CodeProject/Project_Align_Rebuild/include/runtime/DebugAndLogRuntime.hpp
+	"runtimeManger.hpp"
+
+1783635413 /home/unk331/CodeProject/Project_Align_Rebuild/include/runtime/SupervisorRuntime.hpp
+	"runtimeManger.hpp"
+	<memory>
+	<vector>
+	<string>
+
+1783635280 source:/home/unk331/CodeProject/Project_Align_Rebuild/src/runtime/ErrorHandler.cpp
+	"ErrorHandler.hpp"
+
+1783635248 source:/home/unk331/CodeProject/Project_Align_Rebuild/src/runtime/runtimeManger.cpp
+	"runtimeManger.hpp"
+	<stdexcept>
+
+1783635321 source:/home/unk331/CodeProject/Project_Align_Rebuild/src/runtime/Bootstrap.cpp
+	"Bootstrap.hpp"
+
+1783635369 source:/home/unk331/CodeProject/Project_Align_Rebuild/src/runtime/DebugAndLogRuntime.cpp
+	"DebugAndLogRuntime.hpp"
+	<iostream>
+
+1783635383 source:/home/unk331/CodeProject/Project_Align_Rebuild/src/runtime/SupervisorRuntime.cpp
+	"SupervisorRuntime.hpp"
+

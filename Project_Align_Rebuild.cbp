@@ -14,6 +14,8 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="include" />
+					<Add directory="include/runtime" />
+					<Add directory="include/Runtime" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -24,6 +26,8 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="include" />
+					<Add directory="include/runtime" />
+					<Add directory="include/Runtime" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -33,6 +37,47 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Project_Align_Rebuild.layout" />
+		<Unit filename="README.md" />
+		<Unit filename="doxygen/doxyfile" />
+		<Unit filename="doxygen/html/annotated.html" />
+		<Unit filename="doxygen/html/annotated_dup.js" />
+		<Unit filename="doxygen/html/classes.html" />
+		<Unit filename="doxygen/html/classruntime_manger-members.html" />
+		<Unit filename="doxygen/html/classruntime_manger.html" />
+		<Unit filename="doxygen/html/clipboard.js" />
+		<Unit filename="doxygen/html/codefolding.js" />
+		<Unit filename="doxygen/html/cookie.js" />
+		<Unit filename="doxygen/html/dir_2eab888c937f3427b184259251c0a7e9.html" />
+		<Unit filename="doxygen/html/dir_2eab888c937f3427b184259251c0a7e9.js" />
+		<Unit filename="doxygen/html/dir_336443d5468dfc2bb33128b4e5b96f42.html" />
+		<Unit filename="doxygen/html/dir_68267d1309a1af8e8297ef4c3efbcdba.html" />
+		<Unit filename="doxygen/html/dir_d44c64559bbebec7f509842c48db8b23.html" />
+		<Unit filename="doxygen/html/dir_d44c64559bbebec7f509842c48db8b23.js" />
+		<Unit filename="doxygen/html/doxygen.css" />
+		<Unit filename="doxygen/html/doxygen.svg" />
+		<Unit filename="doxygen/html/doxygen_crawl.html" />
+		<Unit filename="doxygen/html/files.html" />
+		<Unit filename="doxygen/html/files_dup.js" />
+		<Unit filename="doxygen/html/index.html" />
+		<Unit filename="doxygen/html/menu.js" />
+		<Unit filename="doxygen/html/menudata.js" />
+		<Unit filename="doxygen/html/navtree.css" />
+		<Unit filename="doxygen/html/navtree.js" />
+		<Unit filename="doxygen/html/navtreedata.js" />
+		<Unit filename="doxygen/html/navtreeindex0.js" />
+		<Unit filename="doxygen/html/runtime_manger_8hpp_source.html" />
+		<Unit filename="doxygen/html/search/all_0.js" />
+		<Unit filename="doxygen/html/search/classes_0.js" />
+		<Unit filename="doxygen/html/search/search.css" />
+		<Unit filename="doxygen/html/search/search.js" />
+		<Unit filename="doxygen/html/search/searchdata.js" />
+		<Unit filename="doxygen/html/tabs.css" />
+		<Unit filename="include/runtime/ErrorHandler.hpp" />
+		<Unit filename="include/runtime/runtimeManger.hpp" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/runtime/ErrorHandler.cpp" />
+		<Unit filename="src/runtime/runtimeManger.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
