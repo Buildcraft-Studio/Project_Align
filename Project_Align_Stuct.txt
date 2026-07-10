@@ -1,80 +1,39 @@
 .
 ├── bin
-│   └── Debug
 ├── doxygen
-│   ├── doxyfile
-│   ├── doxygen.log
-│   └── html
-│       ├── annotated_dup.js
-│       ├── annotated.html
-│       ├── class_engine_1_1_runtime_1_1_runtime_manger.html
-│       ├── class_engine_1_1_runtime_1_1_runtime_manger.js
-│       ├── class_engine_1_1_runtime_1_1_runtime_manger-members.html
-│       ├── classes.html
-│       ├── class_runtime_manger.html
-│       ├── classruntime_manger.html
-│       ├── class_runtime_manger.js
-│       ├── class_runtime_manger-members.html
-│       ├── classruntime_manger-members.html
-│       ├── clipboard.js
-│       ├── codefolding.js
-│       ├── cookie.js
-│       ├── dir_2eab888c937f3427b184259251c0a7e9.html
-│       ├── dir_2eab888c937f3427b184259251c0a7e9.js
-│       ├── dir_336443d5468dfc2bb33128b4e5b96f42.html
-│       ├── dir_68267d1309a1af8e8297ef4c3efbcdba.html
-│       ├── dir_d44c64559bbebec7f509842c48db8b23.html
-│       ├── dir_d44c64559bbebec7f509842c48db8b23.js
-│       ├── doxygen_crawl.html
-│       ├── doxygen.css
-│       ├── doxygen.svg
-│       ├── files_dup.js
-│       ├── files.html
-│       ├── functions_enum.html
-│       ├── functions_func.html
-│       ├── functions.html
-│       ├── index.html
-│       ├── menudata.js
-│       ├── menu.js
-│       ├── navtree.css
-│       ├── navtreedata.js
-│       ├── navtreeindex0.js
-│       ├── navtree.js
-│       ├── runtime_manger_8hpp_source.html
-│       ├── search
-│       │   ├── all_0.js
-│       │   ├── all_1.js
-│       │   ├── all_2.js
-│       │   ├── all_3.js
-│       │   ├── all_4.js
-│       │   ├── classes_0.js
-│       │   ├── enums_0.js
-│       │   ├── enumvalues_0.js
-│       │   ├── enumvalues_1.js
-│       │   ├── enumvalues_2.js
-│       │   ├── enumvalues_3.js
-│       │   ├── functions_0.js
-│       │   ├── search.css
-│       │   ├── searchdata.js
-│       │   └── search.js
-│       └── tabs.css
+├── game
+│   └── gameLogic.lua
 ├── include
+│   ├── geometry
+│   │   ├── modifier.hpp
+│   │   └── object.hpp
 │   └── runtime
+│       ├── Bootstrap.hpp
+│       ├── DebugAndLogRuntime.hpp
 │       ├── ErrorHandler.hpp
-│       └── runtimeManger.hpp
+│       ├── LuaRuntime.hpp
+│       ├── RenderRuntime.hpp
+│       ├── runtimeManger.hpp
+│       └── SupervisorRuntime.hpp
 ├── obj
-│   └── Debug
-│       └── src
-│           └── runtime
-│               └── ErrorHandler.o
+├── PAR_AI_SAVE.txt
 ├── Project_Align_Rebuild.cbp
+├── Project_Align_Rebuild.depend
 ├── Project_Align_Rebuild.layout
 ├── Project_Align_Stuct.txt
 ├── README.md
 └── src
+    ├── geometry
+    │   ├── modifier.cpp
+    │   └── object.cpp
     ├── main.cpp
     └── runtime
+        ├── Bootstrap.cpp
+        ├── DebugAndLogRuntime.cpp
         ├── ErrorHandler.cpp
-        └── runtimeManger.cpp
+        ├── LuaRuntime.cpp
+        ├── RenderRuntime.cpp
+        ├── runtimeManger.cpp
+        └── SupervisorRuntime.cpp
 
-14 directories, 64 files
+11 directories, 26 files

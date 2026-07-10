@@ -28,6 +28,7 @@
 					<Add option="-O2" />
 					<Add directory="include" />
 					<Add directory="include/geometry" />
+					<Add directory="include/runtime" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -37,81 +38,35 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="../src/geometry/Project_Align_Rebuild/src/modifier.cpp" />
+		<Unit filename="PAR_AI_SAVE.txt" />
 		<Unit filename="Project_Align_Rebuild.depend" />
 		<Unit filename="Project_Align_Rebuild.layout" />
 		<Unit filename="Project_Align_Stuct.txt" />
 		<Unit filename="README.md" />
-		<Unit filename="doxygen/doxyfile" />
-		<Unit filename="doxygen/doxygen.log" />
-		<Unit filename="doxygen/html/annotated.html" />
-		<Unit filename="doxygen/html/annotated_dup.js" />
-		<Unit filename="doxygen/html/class_engine_1_1_runtime_1_1_runtime_manger-members.html" />
-		<Unit filename="doxygen/html/class_engine_1_1_runtime_1_1_runtime_manger.html" />
-		<Unit filename="doxygen/html/class_engine_1_1_runtime_1_1_runtime_manger.js" />
-		<Unit filename="doxygen/html/class_runtime_manger-members.html" />
-		<Unit filename="doxygen/html/class_runtime_manger.html" />
-		<Unit filename="doxygen/html/class_runtime_manger.js" />
-		<Unit filename="doxygen/html/classes.html" />
-		<Unit filename="doxygen/html/classruntime_manger-members.html" />
-		<Unit filename="doxygen/html/classruntime_manger.html" />
-		<Unit filename="doxygen/html/clipboard.js" />
-		<Unit filename="doxygen/html/codefolding.js" />
-		<Unit filename="doxygen/html/cookie.js" />
-		<Unit filename="doxygen/html/dir_2eab888c937f3427b184259251c0a7e9.html" />
-		<Unit filename="doxygen/html/dir_2eab888c937f3427b184259251c0a7e9.js" />
-		<Unit filename="doxygen/html/dir_336443d5468dfc2bb33128b4e5b96f42.html" />
-		<Unit filename="doxygen/html/dir_68267d1309a1af8e8297ef4c3efbcdba.html" />
-		<Unit filename="doxygen/html/dir_d44c64559bbebec7f509842c48db8b23.html" />
-		<Unit filename="doxygen/html/dir_d44c64559bbebec7f509842c48db8b23.js" />
-		<Unit filename="doxygen/html/doxygen.css" />
-		<Unit filename="doxygen/html/doxygen.svg" />
-		<Unit filename="doxygen/html/doxygen_crawl.html" />
-		<Unit filename="doxygen/html/files.html" />
-		<Unit filename="doxygen/html/files_dup.js" />
-		<Unit filename="doxygen/html/functions.html" />
-		<Unit filename="doxygen/html/functions_enum.html" />
-		<Unit filename="doxygen/html/functions_func.html" />
-		<Unit filename="doxygen/html/index.html" />
-		<Unit filename="doxygen/html/menu.js" />
-		<Unit filename="doxygen/html/menudata.js" />
-		<Unit filename="doxygen/html/navtree.css" />
-		<Unit filename="doxygen/html/navtree.js" />
-		<Unit filename="doxygen/html/navtreedata.js" />
-		<Unit filename="doxygen/html/navtreeindex0.js" />
-		<Unit filename="doxygen/html/runtime_manger_8hpp_source.html" />
-		<Unit filename="doxygen/html/search/all_0.js" />
-		<Unit filename="doxygen/html/search/all_1.js" />
-		<Unit filename="doxygen/html/search/all_2.js" />
-		<Unit filename="doxygen/html/search/all_3.js" />
-		<Unit filename="doxygen/html/search/all_4.js" />
-		<Unit filename="doxygen/html/search/classes_0.js" />
-		<Unit filename="doxygen/html/search/enums_0.js" />
-		<Unit filename="doxygen/html/search/enumvalues_0.js" />
-		<Unit filename="doxygen/html/search/enumvalues_1.js" />
-		<Unit filename="doxygen/html/search/enumvalues_2.js" />
-		<Unit filename="doxygen/html/search/enumvalues_3.js" />
-		<Unit filename="doxygen/html/search/functions_0.js" />
-		<Unit filename="doxygen/html/search/search.css" />
-		<Unit filename="doxygen/html/search/search.js" />
-		<Unit filename="doxygen/html/search/searchdata.js" />
-		<Unit filename="doxygen/html/tabs.css" />
 		<Unit filename="game/gameLogic.lua" />
 		<Unit filename="include/geometry/modifier.hpp" />
 		<Unit filename="include/geometry/object.hpp" />
 		<Unit filename="include/runtime/Bootstrap.hpp" />
 		<Unit filename="include/runtime/DebugAndLogRuntime.hpp" />
 		<Unit filename="include/runtime/ErrorHandler.hpp" />
+		<Unit filename="include/runtime/LuaRuntime.hpp" />
+		<Unit filename="include/runtime/RenderRuntime.hpp" />
 		<Unit filename="include/runtime/SupervisorRuntime.hpp" />
 		<Unit filename="include/runtime/runtimeManger.hpp" />
+		<Unit filename="src/geometry/modifier.cpp" />
 		<Unit filename="src/geometry/object.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/runtime/Bootstrap.cpp" />
 		<Unit filename="src/runtime/DebugAndLogRuntime.cpp" />
 		<Unit filename="src/runtime/ErrorHandler.cpp" />
+		<Unit filename="src/runtime/LuaRuntime.cpp" />
+		<Unit filename="src/runtime/RenderRuntime.cpp" />
 		<Unit filename="src/runtime/SupervisorRuntime.cpp" />
 		<Unit filename="src/runtime/runtimeManger.cpp" />
 		<Extensions>
+			<code_completion>
+				<search_path add="/home/unk331/CodeProject/Project_Align_Rebuild/game" />
+			</code_completion>
 			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>

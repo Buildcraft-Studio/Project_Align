@@ -6,6 +6,7 @@
 *.lo
 *.o
 *.obj
+obj/
 
 # Precompiled Headers
 *.gch
@@ -38,6 +39,7 @@
 *.exe
 *.out
 *.app
+bin/
 
 # Build directories
 build/
@@ -67,3 +69,7 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# Doxygen
+html/
+doxygen/
