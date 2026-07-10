@@ -1,3 +1,8 @@
+/** *@file main.cpp
+ *  @brief Entry point: wires up RuntimeManger + Bootstrap, and demonstrates
+ *         the WatchDog OK/STALED/DEAD lifecycle end to end.
+ *  @ingroup RuntimeSystem
+**/
 #include "runtime/runtimeManger.hpp"
 #include "runtime/Bootstrap.hpp"
 #include "runtime/DebugAndLogRuntime.hpp"

@@ -1,3 +1,7 @@
+/** *@file Bootstrap.cpp
+ *  @brief Implements Bootstrap: registers the startup-time module set.
+ *  @ingroup RuntimeSystem
+**/
 #include "runtime/Bootstrap.hpp"
 
 namespace Engine::Runtime {

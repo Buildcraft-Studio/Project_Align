@@ -1,3 +1,7 @@
+/** *@file ErrorHandler.cpp
+ *  @brief Implements ErrorHandler. Intentionally empty stub - see class docs.
+ *  @ingroup RuntimeSystem
+**/
 #include "runtime/ErrorHandler.hpp"
 
 namespace Engine::Runtime {

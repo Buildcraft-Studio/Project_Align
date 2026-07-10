@@ -96,8 +96,17 @@ WARN_LOGFILE            = "/home/unk331/CodeProject/Project_Align_Rebuild/doxyge
 # configuration options related to the input files
 #---------------------------------------------------------------------------
 INPUT                  = \
+	"../src/runtime/runtimeManger.cpp" \
+	"../include/runtime/DebugAndLogRuntime.hpp" \
+	"../src/main.cpp" \
+	"../src/runtime/SupervisorRuntime.cpp" \
+	"../include/runtime/Bootstrap.hpp" \
 	"../include/runtime/runtimeManger.hpp" \
-	"../src/Runtime/runtimeManger.cpp" 
+	"../src/runtime/ErrorHandler.cpp" \
+	"../include/runtime/SupervisorRuntime.hpp" \
+	"../src/runtime/DebugAndLogRuntime.cpp" \
+	"../include/runtime/ErrorHandler.hpp" \
+	"../src/runtime/Bootstrap.cpp" 
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          =
 RECURSIVE              = NO

@@ -1,3 +1,8 @@
+/** *@file runtimeManger.cpp
+ *  @brief Implements RuntimeManger: the runtime table, WatchDog scoring,
+ *         and kill/restart lifecycle.
+ *  @ingroup RuntimeSystem
+**/
 #include "runtime/runtimeManger.hpp"
 #include <stdexcept>
 

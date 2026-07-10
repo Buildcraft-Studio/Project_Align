@@ -1,3 +1,8 @@
+/** *@file DebugAndLogRuntime.cpp
+ *  @brief Implements DebugAndLogRuntime's read (logAll/logFailures) and
+ *         set (setRuntimeStatus) entry points.
+ *  @ingroup RuntimeSystem
+**/
 #include "runtime/DebugAndLogRuntime.hpp"
 #include <iostream>
 

@@ -1,3 +1,7 @@
+/** *@file SupervisorRuntime.cpp
+ *  @brief Implements WorkerRuntime and SupervisorRuntime.
+ *  @ingroup RuntimeSystem
+**/
 #include "runtime/SupervisorRuntime.hpp"
 
 namespace Engine::Runtime {
