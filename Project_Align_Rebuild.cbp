@@ -16,6 +16,7 @@
 					<Add directory="include" />
 					<Add directory="include/runtime" />
 					<Add directory="include/Runtime" />
+					<Add directory="include/geometry" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -26,6 +27,7 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="include" />
+					<Add directory="include/geometry" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -35,6 +37,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="../src/geometry/Project_Align_Rebuild/src/modifier.cpp" />
 		<Unit filename="Project_Align_Rebuild.depend" />
 		<Unit filename="Project_Align_Rebuild.layout" />
 		<Unit filename="Project_Align_Stuct.txt" />
@@ -94,11 +97,14 @@
 		<Unit filename="doxygen/html/search/searchdata.js" />
 		<Unit filename="doxygen/html/tabs.css" />
 		<Unit filename="game/gameLogic.lua" />
+		<Unit filename="include/geometry/modifier.hpp" />
+		<Unit filename="include/geometry/object.hpp" />
 		<Unit filename="include/runtime/Bootstrap.hpp" />
 		<Unit filename="include/runtime/DebugAndLogRuntime.hpp" />
 		<Unit filename="include/runtime/ErrorHandler.hpp" />
 		<Unit filename="include/runtime/SupervisorRuntime.hpp" />
 		<Unit filename="include/runtime/runtimeManger.hpp" />
+		<Unit filename="src/geometry/object.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/runtime/Bootstrap.cpp" />
 		<Unit filename="src/runtime/DebugAndLogRuntime.cpp" />
