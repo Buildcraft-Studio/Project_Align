@@ -6,6 +6,10 @@ add_executable(Project_Align_Rebuild
     ${PROJECT_SOURCES}
 )
 
+set_target_properties(Project_Align_Rebuild PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin/Release"
+)
+
 target_include_directories(Project_Align_Rebuild
     PRIVATE
         ${CMAKE_SOURCE_DIR}/include

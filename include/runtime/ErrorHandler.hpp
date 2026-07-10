@@ -32,8 +32,14 @@ namespace Engine::Runtime {
             **/
             void raiseWarning(int reasonCode);
 
+            /** *@brief Return the number of warnings raised for this runtime.
+             *  @return Warning count seen so far.
+            **/
+            uint32_t getWarningCount() const;
+
         private:
             int16_t ownerID; ///< The runtime ID this handler belongs to.
+            uint32_t warningCount = 0; ///< Number of warnings emitted for this runtime.
     };
 }
 #endif // ERRORHANDLER_HPP

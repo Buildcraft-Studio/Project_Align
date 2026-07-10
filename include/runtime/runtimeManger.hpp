@@ -71,6 +71,10 @@ namespace Engine::Runtime {
             ///        considered DEAD and gets killed + restarted.
             static constexpr uint8_t WATCHDOG_MAX_FAILURES = 5;
 
+            /// @brief Tick count after which a runtime is considered DEGRADED
+            ///        before it is finally classified as STALED.
+            static constexpr int64_t WATCHDOG_DEGRADED_TICK_LIMIT = WATCHDOG_TICK_LIMIT * 2;
+
             /** *@brief One logged row of the runtime table: everything
              *         RuntimeManger tracks about a single runtime ID.
             **/

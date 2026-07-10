@@ -72,8 +72,12 @@ void RuntimeManger::WatchDog() {
             // Passed within the OK window (0-100 ticks).
             it->second.status    = statusCode::OK;
             it->second.failCount = 0;
+        } else if (it->second.sinceAlive <= WATCHDOG_DEGRADED_TICK_LIMIT) {
+            // The runtime is still alive but lagging; mark it DEGRADED before
+            // it becomes a hard failure.
+            it->second.status = statusCode::DEGRADED;
         } else {
-            // Failed this check (elapsed ticks > 100).
+            // Failed this check (elapsed ticks > 200).
             it->second.failCount++;
             it->second.status = statusCode::STALED;
 
