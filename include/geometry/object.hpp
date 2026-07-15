@@ -49,7 +49,7 @@ namespace Engine::Geometry {
             std::vector<Vector2> normals;   ///< Per-vertex normals.
             std::vector<Vector2> uvs;       ///< Per-vertex UV coordinates.
             std::vector<int>     idex;      ///< Index buffer (triangle/face indices).
-            int                  type = 0;  ///< Cast from Mesh_Type - see enum above.
+            Mesh_Type            type = Mesh_Type::Square; ///< Mesh classification.
 
             /** *@brief Append one vertex (position + normal + UV) to the mesh.
              *  @param pos  Vertex position.
@@ -76,6 +76,15 @@ namespace Engine::Geometry {
              *  @note STUB: no tessellation logic yet.
             **/
             void addCircle(int radius, int segmentCount);
+
+            /** *@brief Clear all mesh data so the object can be reused. */
+            void clear();
+
+            /** *@brief Set the mesh classification explicitly. */
+            void setType(Mesh_Type meshType);
+
+            /** *@brief Read the current mesh classification. */
+            Mesh_Type getType() const;
     };
 
     /// @brief 3D counterpart to Mesh2. STUB: currently just a copy shell -

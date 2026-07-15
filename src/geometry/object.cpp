@@ -17,6 +17,8 @@ void Mesh2::addVertex(const Vector2& pos, const Vector2& norm, const Vector2& uv
 void Mesh2::addSquare(int a0, int a1, int a2) {
     // Emit a simple triangle using the supplied corner references. The mesh
     // can later be upgraded to a full quad topology when the engine needs it.
+    type = Mesh_Type::Square;
+
     if (a0 < 0 || a1 < 0 || a2 < 0) {
         return;
     }
@@ -27,6 +29,8 @@ void Mesh2::addSquare(int a0, int a1, int a2) {
 }
 
 void Mesh2::addCircle(int radius, int segmentCount) {
+    type = Mesh_Type::Circle;
+
     if (segmentCount < 3) {
         segmentCount = 3;
     }
@@ -50,6 +54,21 @@ void Mesh2::addCircle(int radius, int segmentCount) {
         idex.push_back(i);
         idex.push_back((i % segmentCount) + 1);
     }
+}
+
+void Mesh2::clear() {
+    positions.clear();
+    normals.clear();
+    uvs.clear();
+    idex.clear();
+}
+
+void Mesh2::setType(Mesh_Type meshType) {
+    type = meshType;
+}
+
+Mesh_Type Mesh2::getType() const {
+    return type;
 }
 
 }

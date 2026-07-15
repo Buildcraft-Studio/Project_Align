@@ -7,6 +7,7 @@
 #define RENDERRUNTIME_HPP
 
 #include "runtime/runtimeManger.hpp"
+#include "rendering/screenRendering.hpp"
 
 namespace Engine::Runtime {
 
@@ -43,6 +44,7 @@ namespace Engine::Runtime {
 
         private:
             int16_t id; ///< This module's own runtime ID.
+            Engine::Rendering::ScreenRendering renderer; ///< Minimal frame renderer used by this runtime.
     };
 }
 #endif // RENDERRUNTIME_HPP

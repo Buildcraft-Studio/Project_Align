@@ -26,6 +26,11 @@ void Bootstrap::loadRuntimes(RuntimeManger& manager) {
     supervisor = supervisorPtr.get();
     ownedModules.push_back(std::move(supervisorPtr));
 
+    auto renderRuntime = std::make_unique<RenderRuntime>(3);
+    manager.setRuntime(3, "RenderRuntime", renderRuntime.get());
+    renderRuntimeModule = renderRuntime.get();
+    ownedModules.push_back(std::move(renderRuntime));
+
     // Add further modules the same way, e.g.:
     //   auto physics = std::make_unique<PhysicsRuntime>(3);
     //   manager.setRuntime(3, "PhysicsRuntime", physics.get());
@@ -34,6 +39,10 @@ void Bootstrap::loadRuntimes(RuntimeManger& manager) {
 
 SupervisorRuntime* Bootstrap::getSupervisor() const {
     return supervisor;
+}
+
+RenderRuntime* Bootstrap::getRenderRuntime() const {
+    return renderRuntimeModule;
 }
 
 }

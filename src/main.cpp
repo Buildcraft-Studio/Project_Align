@@ -27,6 +27,11 @@ int main() {
         manager.WatchDog();
     }
 
+    RenderRuntime* renderRuntime = bootstrap.getRenderRuntime();
+    if (renderRuntime != nullptr) {
+        renderRuntime->renderFrame();
+    }
+
     // Later, AT RUNTIME (not at Bootstrap time), the supervisor spawns a
     // worker on demand and registers it itself via createRuntime.
     SupervisorRuntime* supervisor = bootstrap.getSupervisor();

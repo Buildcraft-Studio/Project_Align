@@ -9,6 +9,7 @@
 #include "runtime/runtimeManger.hpp"
 #include "runtime/DebugAndLogRuntime.hpp"
 #include "runtime/SupervisorRuntime.hpp"
+#include "runtime/RenderRuntime.hpp"
 #include <memory>
 #include <vector>
 
@@ -43,12 +44,14 @@ namespace Engine::Runtime {
              *  @return Non-owning pointer to the SupervisorRuntime, or nullptr if loadRuntimes() hasn't run yet.
             **/
             SupervisorRuntime* getSupervisor() const;
+            RenderRuntime* getRenderRuntime() const;
 
         private:
             /// Bootstrap owns these so RuntimeManger's raw IRuntimeModule*
             /// pointers stay valid for the life of the program.
             std::vector<std::unique_ptr<IRuntimeModule>> ownedModules;
             SupervisorRuntime* supervisor = nullptr; ///< Non-owning view into ownedModules, for getSupervisor().
+            RenderRuntime* renderRuntimeModule = nullptr; ///< Non-owning view into ownedModules, for getRenderRuntime().
     };
 }
 #endif // BOOTSTRAP_HPP
