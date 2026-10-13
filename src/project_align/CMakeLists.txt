@@ -1,5 +1,8 @@
 add_library(ProjectAlign
     src/greeter.cpp
+    src/runtime/bootstrap.cpp
+    src/runtime/service.cpp
+    src/runtime/watchdog.cpp
 )
 
 add_library(ProjectAlign::ProjectAlign ALIAS ProjectAlign)
