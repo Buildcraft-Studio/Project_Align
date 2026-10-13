@@ -1,26 +1,25 @@
-# List to Implemented
+# Planned Features
 
 ## Library
 
 ### API
 
-* LUA API
-* File Manger API
+- Lua API
+- File Manager API
 
 ### Runtime
 
-* LUA RUNTIME
-* CMD Rendering RUNTIME
-* 2D Rendering RUNTIME
-* Asset Manager RUNTIME
-  * This include Texture, Images, Audio, and BIN
+- Lua runtime
+- Command-line rendering runtime
+- 2D rendering runtime
+- Asset manager runtime
+  - Includes textures, images, audio, and binary data
+- NPC and player runtime
+- Network runtime (optional)
 
-* NPC and Player Runtime
-* Network Runtime (may or may not be added)
+### Functionality
 
-### Function
-
-* Load Soundtrack
-* Layer Image rendering
-* Save Data to file
-* NPC AI 
+- Load soundtrack
+- Layer image rendering
+- Save data to file
+- NPC AI

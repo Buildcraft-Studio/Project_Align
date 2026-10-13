@@ -1,0 +1,7 @@
+CompileFlags:
+  Add:
+    - -std=c++17
+    - -I./src/project_align/include
+    - -I./src/project_align/src
+    - -I./app
+    - -I./tests
