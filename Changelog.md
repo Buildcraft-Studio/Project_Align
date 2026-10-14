@@ -8,3 +8,5 @@
 
 2026-10-13 AI GitHub Copilot Runtime bootstrap, service registry, and watchdog templates were added with working C++ source implementations and CMake integration.
 
+2026-10-13 AI GitHub Copilot Verified the project builds and tests successfully with a vendored local FTXUI dependency instead of a remote GitHub fetch. Added a minimal TUI state container for preference and process tracking, wired the bootstrap and watchdog into the app entry point, and confirmed the app prints a runtime status snapshot: "Hello, world!" followed by "runtime status: running | ui_theme=dark | processes=2".
+

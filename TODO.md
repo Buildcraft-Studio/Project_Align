@@ -16,6 +16,7 @@
   - Includes textures, images, audio, and binary data
 - NPC and player runtime
 - Network runtime (optional)
+- Watchdog and Services ✅
 
 ### Functionality
 

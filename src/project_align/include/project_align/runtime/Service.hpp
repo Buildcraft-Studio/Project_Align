@@ -15,7 +15,8 @@ enum class ServiceStatus : std::int8_t {
     Retry2 = 6,
     FinalRetry = 7,
     Dead = 8,
-    Disabled = -1
+    Disabled = -1,
+    StartOnce = -2
 };
 
 struct ServiceProfile {

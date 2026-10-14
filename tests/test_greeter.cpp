@@ -4,6 +4,7 @@
 
 #include "project_align/greeter.h"
 #include "project_align/runtime/Bootstrap.hpp"
+#include "project_align/runtime/TUI.hpp"
 
 int main() {
     const std::string result = project_align::greet("world");
@@ -26,6 +27,15 @@ int main() {
     assert(!bootstrap.isRunning());
     bootstrap.start();
     assert(bootstrap.isRunning());
+
+    Engine::Runtime::TUI tui;
+    tui.setPreference("theme", "dark");
+    tui.setPreference("refresh_hz", "10");
+    assert(tui.getPreference("theme") == "dark");
+    assert(tui.getPreference("refresh_hz") == "10");
+
+    tui.addProcess("heartbeat", "watchdog");
+    assert(tui.hasProcess("heartbeat"));
 
     return 0;
 }
