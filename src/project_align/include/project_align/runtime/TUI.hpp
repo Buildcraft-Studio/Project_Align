@@ -1,4 +1,5 @@
-#pragma once
+#ifndef PROJECT_ALIGN_RUNTIME_TUI_HPP
+#define PROJECT_ALIGN_RUNTIME_TUI_HPP
 
 #include <string>
 #include <unordered_map>
@@ -58,3 +59,4 @@ private:
 };
 
 }  // namespace Engine::Runtime
+#endif // PROJECT_ALIGN_RUNTIME_TUI_HPP

@@ -1,5 +1,5 @@
-#pragma once
-
+#ifndef PROJECT_ALIGN_RUNTIME_BOOTSTRAP_HPP
+#define PROJECT_ALIGN_RUNTIME_BOOTSTRAP_HPP
 #include <utility>
 
 #include "Service.hpp"
@@ -36,3 +36,5 @@ private:
 };
 
 }  // namespace Engine::Runtime
+
+#endif  // PROJECT_ALIGN_RUNTIME_BOOTSTRAP_HPP

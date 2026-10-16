@@ -1,4 +1,5 @@
-#pragma once
+#ifndef PROJECT_ALIGN_RUNTIME_WATCHDOG_HPP
+#define PROJECT_ALIGN_RUNTIME_WATCHDOG_HPP
 
 #include <chrono>
 #include <cstdint>
@@ -44,3 +45,4 @@ private:
 };
 
 }  // namespace Engine::Runtime 
+#endif // PROJECT_ALIGN_RUNTIME_WATCHDOG_HPP

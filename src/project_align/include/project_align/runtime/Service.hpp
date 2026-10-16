@@ -1,4 +1,5 @@
-#pragma once
+#ifndef PROJECT_ALIGN_RUNTIME_SERVICE_HPP
+#define PROJECT_ALIGN_RUNTIME_SERVICE_HPP
 
 #include <cstdint>
 #include <string>
@@ -52,3 +53,4 @@ private:
 };
 
 }  // namespace Engine::Runtime
+#endif // PROJECT_ALIGN_RUNTIME_SERVICE_HPP
